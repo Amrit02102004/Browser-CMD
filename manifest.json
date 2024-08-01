@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Browser Command Panel",
+    "version": "1.0",
+    "description": "A command-line interface for browser actions",
+    "permissions": ["history", "tabs", "browsingData"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "omnibox": { "keyword": "cmd" },
+    "commands": {
+      "activate-command-mode": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Space",
+          "mac": "Command+Shift+Space"
+        },
+        "description": "Activate command mode"
+      }
+    },
+    "action": {},
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }

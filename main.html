@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Command Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 350px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .shortcut {
+            background-color: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #openFullHelp {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        #openFullHelp:hover {
+            background-color: #27ae60;
+        }
+        .footer {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Browser Command Panel</h1>
+    
+    <p>Use <span class="shortcut">Ctrl+Shift+Space</span> (or <span class="shortcut">Command+Shift+Space</span> on Mac) to activate the command panel.</p>
+    
+    <p>Type <span class="shortcut">cmd</span> in the address bar to use commands.</p>
+    
+    <p>Some useful commands:</p>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>history</td>
+            <td>Open browser history</td>
+        </tr>
+        <tr>
+            <td>settings</td>
+            <td>Open browser settings</td>
+        </tr>
+        <tr>
+            <td>yt [query]</td>
+            <td>Search YouTube</td>
+        </tr>
+        <tr>
+            <td>git [query]</td>
+            <td>Search GitHub</td>
+        </tr>
+        <tr>
+            <td>inst [query]</td>
+            <td>Search Instagram</td>
+        </tr>
+        <tr>
+            <td>clchistory</td>
+            <td>Clear browsing history</td>
+        </tr>
+        <tr>
+            <td>clccookies</td>
+            <td>Clear all cookies</td>
+        </tr>
+    </table>
+    
+    <a href="#" id="openFullHelp">Open full help page</a>
+    
+    <div class="footer">
+        Developed with 🧠 by Amrit
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>d

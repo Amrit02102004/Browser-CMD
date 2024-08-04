@@ -4,9 +4,7 @@
     "version": "1.0",
     "description": "A command-line interface for browser actions",
     "permissions": ["history", "tabs", "browsingData"],
-    "background": {
-      "service_worker": "background.js"
-    },
+    
     "omnibox": { "keyword": "cmd" },
     "commands": {
       "activate-command-mode": {
@@ -17,11 +15,22 @@
         "description": "Activate command mode"
       }
     },
-    "action": {},
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
-  }
+    "action": {
+    "default_popup": "main.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["help.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

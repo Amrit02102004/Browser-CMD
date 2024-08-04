@@ -10,7 +10,7 @@ A Chrome extension that provides a command-line interface for quick browser acti
 
 ## Installation
 
-1. Download the [ZIP file](https://example.com/browser-command-panel.zip) of the extension.
+1. Download the [ZIP file](https://github.com/user-attachments/files/16487286/BrowserCMD.zip) of the extension.
 2. Open Chrome and go to `chrome://extensions/`.
 3. Enable "Developer mode" in the top right corner.
 4. Click "Load unpacked" and select the directory containing the extracted extension files.
